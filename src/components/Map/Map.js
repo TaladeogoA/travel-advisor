@@ -17,7 +17,7 @@ const Map = ({
     <Box sx={mapContainerStyle}>
       {/* pass coordinates, setCoordinates, and setBoundaries to GoogleMapReact component */}
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyA0pZSTOqLuBIuvg0ScftE8Hv6g6FdBfwY" }}
+        bootstrapURLKeys={{ key: `${process.env.REACT_APP_API_KEY}` }}
         defaultCenter={coordinates}
         center={coordinates}
         defaultZoom={14}
